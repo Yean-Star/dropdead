@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    
+    public GameObject _camera;
+    public GameObject rabbit;
     void Start()
     {
         StartCoroutine(randomPos());
@@ -13,9 +14,9 @@ public class Platform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        //Debug.Log(Screen.width);
-        //Debug.Log(Screen.height);
+        Debug.Log(_camera.transform.position.y + 5);
+        Debug.Log(Screen.width);
+        Debug.Log(Screen.height);
     }
 
     //public float ScreenCredentials()
@@ -27,13 +28,15 @@ public class Platform : MonoBehaviour
     //}
     public void RandomPos()
     {
-        
+        var verticalSize = Camera.main.orthographicSize * 2.0;
+        var horizontalSize = verticalSize * Screen.width / Screen.height;
     }
     public IEnumerator randomPos()
     {
         while (true)
         {
-            transform.position = new Vector3(Random.Range(0.0f, Camera.main.orthographicSize * 2), Random.Range(0.0f, (Camera.main.orthographicSize * 2) * Screen.width / Screen.height), 0.0f);
+            rabbit.transform.position = new Vector3(0.0f, _camera.transform.position.y + 5, 0.0f);
+            //transform.position = new Vector3(Random.Range(0.0f, Camera.main.orthographicSize * 2), Random.Range(0.0f, (Camera.main.orthographicSize * 2) * Screen.width / Screen.height), 0.0f);
             yield return new WaitForSeconds(1.0f);
         }
        
