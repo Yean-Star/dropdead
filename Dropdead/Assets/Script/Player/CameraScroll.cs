@@ -19,6 +19,8 @@ public class CameraScroll : MonoBehaviour
     private Vector3 _reframeEndPos;
     private float _reframeTimer;
 
+    private bool isStop = false;
+
     void Start()
     {
         camMotion = this.transform.position;
@@ -27,7 +29,10 @@ public class CameraScroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        NormalScroll();
+        if (!isStop)
+        {
+            NormalScroll();
+        }
         Reframe();
     }
 
@@ -38,6 +43,7 @@ public class CameraScroll : MonoBehaviour
         camMotion.y -= camSpeed * Time.deltaTime;
         camMotion.z = -10.0f;
         this.transform.position = camMotion;
+        
     }
 
     public void TryReframePlayer()
@@ -63,5 +69,9 @@ public class CameraScroll : MonoBehaviour
 
         camMotion = Vector3.Slerp(camMotion, _reframeEndPos, _reframeTimer);
         this.transform.position = camMotion;
+    }
+    public void StopCamera()
+    {
+        isStop = true;
     }
 }
