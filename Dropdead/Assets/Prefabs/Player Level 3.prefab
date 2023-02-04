@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 1121242248, guid: 6bfd7d23582740a4ba80378ac2027886, type: 3}
-  m_Color: {r: 1, g: 0.93773586, b: 0.96402884, a: 1}
+  m_Color: {r: 1, g: 0.93515027, b: 0.89056605, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4952419006496718458}
   moveSpeed: 3
-  fallingSpeed: 200
+  fallingSpeed: 275
   jumpHigh: 25
   isJump: 0
 --- !u!95 &4952419006496718407
