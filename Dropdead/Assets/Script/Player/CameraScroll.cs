@@ -46,7 +46,7 @@ public class CameraScroll : MonoBehaviour
 
         _repositioning = true;
         _reframeEndPos = transform.position;
-        _reframeEndPos.y = player.transform.position.y;
+        _reframeEndPos.y = player.transform.position.y - 2.5f;
         _reframeTimer = 0f;
     }
   

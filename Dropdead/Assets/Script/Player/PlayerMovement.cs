@@ -14,10 +14,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float jumpHigh;
 
+    private float tempSpeed;
+
     public bool isJump = false;
 
 
     float inputX;
+
+    private void Start()
+    {
+        tempSpeed = -fallingSpeed;
+    }
     // Start is called before the first frame update
     private void Awake()
     {
@@ -49,19 +56,32 @@ public class PlayerMovement : MonoBehaviour
             
         }
         rb.velocity = new Vector2(inputX * moveSpeed, fallSpeed * Time.deltaTime);
+        if(rb.velocity.x < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else if(rb.velocity.x > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 
     void TryJump()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (isJump)
         {
-            if (isJump)
+            if (Input.GetKey(KeyCode.Space))
             {
-                rb.AddForce(Vector2.up * jumpHigh);
+                rb.AddForce(Vector2.up * jumpHigh, ForceMode2D.Impulse);
+                fallingSpeed = 0;
             }
-
-
+            
         }
+        else if(!isJump)
+        {
+            fallingSpeed = tempSpeed;
+        }
+        
     }
     public void Die()
     {
