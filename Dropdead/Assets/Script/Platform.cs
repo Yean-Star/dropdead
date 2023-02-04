@@ -35,7 +35,7 @@ public class Platform : MonoBehaviour
     {
         while (true)
         {
-            rabbit.transform.position = new Vector3(0.0f, _camera.transform.position.y + 5, 0.0f);
+            //rabbit.transform.position = new Vector3(0.0f, _camera.transform.position.y + 5, 0.0f);
             //transform.position = new Vector3(Random.Range(0.0f, Camera.main.orthographicSize * 2), Random.Range(0.0f, (Camera.main.orthographicSize * 2) * Screen.width / Screen.height), 0.0f);
             yield return new WaitForSeconds(1.0f);
         }
