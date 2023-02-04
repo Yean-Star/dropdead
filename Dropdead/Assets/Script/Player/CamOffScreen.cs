@@ -31,7 +31,7 @@ public class CamOffScreen : MonoBehaviour
         }
         if(player.transform.position.y < rightBottom.y + 1|| player.transform.position.y < leftBottom.y + 1)
         {
-            cameraScroll.EqualPlayer();
+            cameraScroll.TryReframePlayer();
         }
     }
 }

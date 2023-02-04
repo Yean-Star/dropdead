@@ -10,8 +10,15 @@ public class CameraScroll : MonoBehaviour
     [SerializeField]
     private float camSpeed;
 
-    public float followSpeed = 2.0f;
+    [SerializeField]
+    private float _reframeSpeed = 2f;
+
     // Start is called before the first frame update
+
+    private bool _repositioning;
+    private Vector3 _reframeEndPos;
+    private float _reframeTimer;
+
     void Start()
     {
         camMotion = this.transform.position;
@@ -20,16 +27,41 @@ public class CameraScroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        camMotion.y -= camSpeed / 1000;
+        NormalScroll();
+        Reframe();
+    }
+
+    private void NormalScroll()
+    {
+        if (_repositioning) return;
+
+        camMotion.y -= camSpeed * Time.deltaTime;
         camMotion.z = -10.0f;
         this.transform.position = camMotion;
     }
-  
-    public void EqualPlayer()
+
+    public void TryReframePlayer()
     {
-        Debug.Log("Get on");
-        Vector3 newPos = new Vector3(0.0f, player.transform.position.y, 0.0f);
-        camMotion = Vector3.Slerp(camMotion, newPos, followSpeed * Time.deltaTime);
+        if (_repositioning) return;
+
+        _repositioning = true;
+        _reframeEndPos = transform.position;
+        _reframeEndPos.y = player.transform.position.y;
+        _reframeTimer = 0f;
+    }
+  
+    private void Reframe()
+    {
+        if (!_repositioning) return;
+
+        _reframeTimer += Time.deltaTime * _reframeSpeed;
+        if (_reframeTimer >= 1f)
+        {
+            _reframeTimer = 1f;
+            _repositioning = false;
+        }
+
+        camMotion = Vector3.Slerp(camMotion, _reframeEndPos, _reframeTimer);
         this.transform.position = camMotion;
     }
 }
