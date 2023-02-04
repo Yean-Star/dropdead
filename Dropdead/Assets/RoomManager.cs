@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
+    private int pint = 1;
     public RoomSO room1, room2 ,room3;
     void Start()
     {
-        int pint = PlayerPrefs.GetInt("SO");
+        pint = PlayerPrefs.GetInt("SO");
         if(pint == 1)
         {
             Instantiate(room1.floor, new Vector3(0, 0, 0), Quaternion.identity);
