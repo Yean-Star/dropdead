@@ -12,6 +12,9 @@ public class CamOffScreen : MonoBehaviour
     public PlayerMovement playerMovement;
     public CameraScroll cameraScroll;
 
+    [SerializeField]
+    GameObject stopScroll;
+
     void Update()
     {
 
@@ -32,6 +35,10 @@ public class CamOffScreen : MonoBehaviour
         if(player.transform.position.y < rightBottom.y + 1|| player.transform.position.y < leftBottom.y + 1)
         {
             cameraScroll.TryReframePlayer();
+        }
+        if(stopScroll.transform.position.y > rightBottom.y || stopScroll.transform.position.y > leftBottom.y)
+        {
+            cameraScroll.StopCamera();
         }
     }
 }
