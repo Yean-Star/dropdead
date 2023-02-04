@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DollController : MonoBehaviour
 {
+    public Dialoge dialoge;
     public void DollInteract()
     {
-        Debug.Log("Press Doll");
+        FindObjectOfType<DialogeManager>().StartDialoge(dialoge);
     }
 }

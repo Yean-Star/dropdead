@@ -27,8 +27,8 @@ public class Interactable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
-                Debug.Log("Press E");
                 interaction.Invoke();
+                pressKeyText.gameObject.SetActive(false);
             }
         }
     }
@@ -39,7 +39,6 @@ public class Interactable : MonoBehaviour
         {
             isRange = true;
             pressKeyText.gameObject.SetActive(true);
-            Debug.Log("Player in range");
         }
 
     }
@@ -50,7 +49,7 @@ public class Interactable : MonoBehaviour
         {
             isRange = false;
             pressKeyText.gameObject.SetActive(false);
-            Debug.Log("Player not in range");
+            FindObjectOfType<DialogeManager>().EndDialoge();
         }
     }
 }

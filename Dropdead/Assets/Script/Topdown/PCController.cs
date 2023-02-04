@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PCController : MonoBehaviour
 {
+    public Dialoge dialoge;
     public void PCInteract()
     {
-        Debug.Log("Press PC");
+        FindObjectOfType<DialogeManager>().StartDialoge(dialoge);
     }
 }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ChairController : MonoBehaviour
 {
+    public Dialoge dialoge;
     public void ChairInteract()
     {
-        Debug.Log("Press Chair");
+        FindObjectOfType<DialogeManager>().StartDialoge(dialoge);
     }
 }
