@@ -9,7 +9,7 @@ public class RoomManager : MonoBehaviour
     void Start()
     {
         Debug.Log(pint);
-        //pint = PlayerPrefs.GetInt("SO");
+        pint = PlayerPrefs.GetInt("SO");
         if(pint == 1)
         {
             Instantiate(room1.floor, new Vector3(0, 0, 0), Quaternion.identity);
