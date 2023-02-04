@@ -19,7 +19,7 @@ public class Wall : MonoBehaviour
         int rand = Random.Range(0, _angle.Length);
         transform.rotation = Quaternion.Euler(0, 0, _angle[rand]);
 
-        Debug.Log(rando);
+        //Debug.Log(rando);
         if(rando == 2&&rotateEnable)
         {
             //Debug.Log("rotate");
