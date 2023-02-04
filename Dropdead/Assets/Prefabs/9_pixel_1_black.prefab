@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4249620697710384967}
   - component: {fileID: 4249620697710384964}
   - component: {fileID: 4249620697710383289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 9_pixel_1_black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,3 +167,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daddc77f81777d5429566e91204bc1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateEnable: 0
