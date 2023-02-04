@@ -23,6 +23,7 @@ public class Interactable : MonoBehaviour
     void Update()
     {
         InteractObject();
+        ClikctoNextDialogue();
     }
 
     void InteractObject()
@@ -37,6 +38,13 @@ public class Interactable : MonoBehaviour
         }
     }
 
+    void ClikctoNextDialogue()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            FindObjectOfType<DialogeManager>().DisplayNextSentence();
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -55,6 +63,11 @@ public class Interactable : MonoBehaviour
             pressKeyText.gameObject.SetActive(false);
             FindObjectOfType<DialogeManager>().EndDialoge();
         }
+    }
+
+    void goal()
+    {
+
     }
 }
 
