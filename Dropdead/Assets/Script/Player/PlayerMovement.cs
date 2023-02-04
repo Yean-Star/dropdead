@@ -85,6 +85,6 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die()
     {
-        Debug.Log("Game over");
+        FindObjectOfType<GameManager>().Gameover();
     }
 }
