@@ -237,7 +237,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5120faea059c9c4b8b391167b0aa2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 11400000, guid: 04847024d6506a34ea812056d46a0e0b, type: 2}
+  room1: {fileID: 11400000, guid: ba7d1d127e2d8e447821ecf06f32f0fa, type: 2}
+  room2: {fileID: 11400000, guid: c66931097f66aa84eb499313a3962f99, type: 2}
+  room3: {fileID: 11400000, guid: 04847024d6506a34ea812056d46a0e0b, type: 2}
 --- !u!4 &259038110
 Transform:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class GameEnd : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        manager.ChangeScene(sceneID);
-
+        manager.ChangeScene(4);
+        PlayerPrefs.SetInt("SO", sceneID);
     }
 }

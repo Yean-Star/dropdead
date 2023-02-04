@@ -7727,6 +7727,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 459812222}
+    - target: {fileID: 1964851673703153825, guid: 1d85dbeaa7529d241b1f38be3dc91405, type: 3}
+      propertyPath: sceneID
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1964851673703153885, guid: 1d85dbeaa7529d241b1f38be3dc91405, type: 3}
       propertyPath: m_Name
       value: End chair
