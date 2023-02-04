@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4952419006496718458}
   moveSpeed: 3
-  fallingSpeed: 65
+  fallingSpeed: 140
   jumpHigh: 25
   isJump: 0
 --- !u!95 &4952419006496718407
