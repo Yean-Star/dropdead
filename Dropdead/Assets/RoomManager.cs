@@ -8,7 +8,8 @@ public class RoomManager : MonoBehaviour
     public RoomSO room1, room2 ,room3;
     void Start()
     {
-        pint = PlayerPrefs.GetInt("SO");
+        Debug.Log(pint);
+        //pint = PlayerPrefs.GetInt("SO");
         if(pint == 1)
         {
             Instantiate(room1.floor, new Vector3(0, 0, 0), Quaternion.identity);

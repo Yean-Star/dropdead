@@ -9,6 +9,7 @@ public class EndingDialogue : MonoBehaviour
     int click = 0;
     public TMP_Text text;
     public TMP_Text text2;
+    private bool allowClick = true;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class EndingDialogue : MonoBehaviour
         {
             StartCoroutine(DeadAppear());
         }
+        
     }
     private void Update()
     {
@@ -39,11 +41,15 @@ public class EndingDialogue : MonoBehaviour
     }
     void ClicktoNext()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
+       
+        
+       if (Input.GetMouseButtonDown(0))
+       {
             FindObjectOfType<DialogeManager>().DisplayNextSentence();
-            click++;
-        }
+                
+       }
+        
+        
     }
-
+  
 }

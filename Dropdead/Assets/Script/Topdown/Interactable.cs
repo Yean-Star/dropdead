@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using TMPro;
 
 public class Interactable : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text pressKeyText;
+
     public bool isRange = false;
     public KeyCode interactKey;
     public UnityEvent interaction;
+
+
 
     private void Awake()
     {
@@ -65,9 +69,5 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    void goal()
-    {
-
-    }
 }
 
