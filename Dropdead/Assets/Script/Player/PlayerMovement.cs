@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float fallingSpeed;
     [SerializeField]
     private float jumpHigh;
+    public Animator animator;
 
     private float tempSpeed;
 
@@ -59,10 +60,16 @@ public class PlayerMovement : MonoBehaviour
         if(rb.velocity.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            animator.SetFloat("Speed", 1);
         }
         else if(rb.velocity.x > 0)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
+            animator.SetFloat("Speed", 1);
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
         }
     }
 
