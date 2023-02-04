@@ -8,6 +8,8 @@ public class DialogeManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogeText;
 
+    public float letterSpeed;
+
     public Animator animator;
 
     private Queue<string> sentences;
@@ -46,7 +48,7 @@ public class DialogeManager : MonoBehaviour
         foreach(char letter in sentence.ToCharArray())
         {
             dialogeText.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(letterSpeed);
         }
     }
     public void EndDialoge()
