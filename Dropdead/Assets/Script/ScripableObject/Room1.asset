@@ -15,7 +15,7 @@ MonoBehaviour:
   phaseIndex: 1
   floor: {fileID: 667841266665144536, guid: 3743336e1c099a1468309b847afc8667, type: 3}
   table: {fileID: 5997108006725784377, guid: 0f943f427f50c3b49b171eeacd290655, type: 3}
-  player: {fileID: 6601630675153931383, guid: 4c148903c6ff721409292e2931d09f46, type: 3}
+  player: {fileID: 2673602451660175554, guid: 4c148903c6ff721409292e2931d09f46, type: 3}
   _wall: {fileID: 3195824235325281100, guid: 8822b552ba7a54745958e5155b82ef96, type: 3}
   Chair: {fileID: 7348749607229053932, guid: 3433298db09edf0478e26cdbf03b6aec, type: 3}
   Doll: {fileID: 8922271211513239521, guid: eac203bf8f65eda4eaf5487ed53b4a81, type: 3}
