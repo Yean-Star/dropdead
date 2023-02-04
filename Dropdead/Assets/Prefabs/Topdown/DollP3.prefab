@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9118225056529177759
+--- !u!1 &811476207032447709
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9118225056529177754}
-  - component: {fileID: 9118225056529177757}
-  - component: {fileID: 9118225056529177756}
+  - component: {fileID: 811476207032447706}
+  - component: {fileID: 811476207032447704}
+  - component: {fileID: 811476207032447707}
   m_Layer: 0
-  m_Name: InteractionBox (2)
+  m_Name: InteractionBox (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9118225056529177754
+--- !u!4 &811476207032447706
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9118225056529177759}
+  m_GameObject: {fileID: 811476207032447709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6330148, y: 2.020651, z: 0.0077781677}
+  m_LocalPosition: {x: 1.8369852, y: 1.330651, z: 0.0077781677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9118225056665214281}
+  m_Father: {fileID: 811476208310823789}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9118225056529177757
+--- !u!114 &811476207032447704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9118225056529177759}
+  m_GameObject: {fileID: 811476207032447709}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0422933468984e94da515553776dd53b, type: 3}
@@ -51,9 +51,9 @@ MonoBehaviour:
   interaction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9118225056665214326}
-        m_TargetAssemblyTypeName: PCController, Assembly-CSharp
-        m_MethodName: PCInteract
+      - m_Target: {fileID: 811476208310823788}
+        m_TargetAssemblyTypeName: DollController, Assembly-CSharp
+        m_MethodName: DollInteract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -63,13 +63,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!58 &9118225056529177756
+--- !u!58 &811476207032447707
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9118225056529177759}
+  m_GameObject: {fileID: 811476207032447709}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -78,8 +78,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.03, y: 0}
   serializedVersion: 2
-  m_Radius: 0.68
---- !u!1 &9118225056665214280
+  m_Radius: 0.89
+--- !u!1 &811476208310823791
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,44 +87,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9118225056665214281}
-  - component: {fileID: 9118225056665214326}
+  - component: {fileID: 811476208310823789}
+  - component: {fileID: 811476208310823788}
   m_Layer: 0
-  m_Name: PC
+  m_Name: DollP3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9118225056665214281
+--- !u!4 &811476208310823789
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9118225056665214280}
+  m_GameObject: {fileID: 811476208310823791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.08698523, y: 0.59934884, z: -9.936536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9118225056529177754}
+  - {fileID: 811476207032447706}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9118225056665214326
+--- !u!114 &811476208310823788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9118225056665214280}
+  m_GameObject: {fileID: 811476208310823791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a526143799aa8479202dad930fa18c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b94c0747f3969645b5d5021995fada6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialoge:
     name: '?'
     sentences:
-    - "I don\u2019t even wanna see it.\r\n"
+    - I miss you, my very dear friend!

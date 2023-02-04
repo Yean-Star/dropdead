@@ -11,5 +11,7 @@ public class RoomSO : ScriptableObject
     public GameObject table;
     public GameObject player;
     public GameObject _wall;
-    public GameObject[] _interract;
+    public GameObject Chair;
+    public GameObject Doll;
+    public GameObject PC;
 }

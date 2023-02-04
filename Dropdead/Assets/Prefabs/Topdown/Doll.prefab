@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b94c0747f3969645b5d5021995fada6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialoge:
+    name: '?'
+    sentences:
+    - "It\u2019s just a doll, doesn\u2019t matter.\r\n"
 --- !u!1 &8922271213328617043
 GameObject:
   m_ObjectHideFlags: 0

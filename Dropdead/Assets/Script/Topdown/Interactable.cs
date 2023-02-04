@@ -12,6 +12,10 @@ public class Interactable : MonoBehaviour
     public KeyCode interactKey;
     public UnityEvent interaction;
 
+    private void Awake()
+    {
+        pressKeyText = GameObject.FindObjectOfType<TextMeshProUGUI>();
+    }
     private void Start()
     {
         pressKeyText.gameObject.SetActive(false);

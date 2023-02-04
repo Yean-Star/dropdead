@@ -17,4 +17,6 @@ MonoBehaviour:
   table: {fileID: 5003111835633643989, guid: 3c497f25716e2db49b362223249f1f6c, type: 3}
   player: {fileID: 6601630675153931383, guid: 4c148903c6ff721409292e2931d09f46, type: 3}
   _wall: {fileID: 3195824235325281100, guid: 8822b552ba7a54745958e5155b82ef96, type: 3}
-  _interract: []
+  Chair: {fileID: 331684157446991904, guid: 88a43c7dab477e0438952eccab2cbb93, type: 3}
+  Doll: {fileID: 3161213953306866135, guid: 446e1028a71b4fc4b878d91548986111, type: 3}
+  PC: {fileID: 7337128058100353916, guid: 0cff74c9db185924c8b37888c00d76a3, type: 3}
