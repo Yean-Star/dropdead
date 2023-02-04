@@ -5,24 +5,15 @@ using UnityEngine;
 public class checkFloor : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public PlayerMovement jumping;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("floor");
+        jumping.isJump = true;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("falling");
+        jumping.isJump = false;
     }
 }

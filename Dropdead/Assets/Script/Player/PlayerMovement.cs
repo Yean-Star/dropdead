@@ -11,6 +11,11 @@ public class PlayerMovement : MonoBehaviour
     private float moveSpeed;
     [SerializeField]
     private float fallingSpeed;
+    [SerializeField]
+    private float jumpHigh;
+
+    public bool isJump = false;
+
 
     float inputX;
     // Start is called before the first frame update
@@ -27,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Falling(fallingSpeed);
+        TryJump();
     }
 
     void Inputs()
@@ -42,9 +48,21 @@ public class PlayerMovement : MonoBehaviour
           fallingSpeed = -(Mathf.Abs(fallingSpeed));
             
         }
-        rb.velocity = new Vector2(inputX * moveSpeed, fallSpeed);
+        rb.velocity = new Vector2(inputX * moveSpeed, fallSpeed * Time.deltaTime);
     }
-    
+
+    void TryJump()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (isJump)
+            {
+                rb.AddForce(Vector2.up * jumpHigh);
+            }
+
+
+        }
+    }
     public void Die()
     {
         Debug.Log("Game over");
