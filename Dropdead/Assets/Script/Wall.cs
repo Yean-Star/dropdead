@@ -50,7 +50,7 @@ public class Wall : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("rotate");
+            //Debug.Log("rotate");
             rotate++;
             transform.rotation = Quaternion.Euler(0, 0, rotate);
             yield return new WaitForSeconds(0.02f);
@@ -61,7 +61,7 @@ public class Wall : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("rotate");
+            //Debug.Log("rotate");
             rotate--;
             transform.rotation = Quaternion.Euler(0, 0, rotate);
             yield return new WaitForSeconds(0.02f);
