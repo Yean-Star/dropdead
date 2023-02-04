@@ -1848,7 +1848,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8024afdc3fb42994f8e15ccbc128983f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1.5
   Loop: 1
   Mute: 0
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 354547948}
-  camSpeed: 5.5
+  camSpeed: 5
   _reframeSpeed: 0.61
 --- !u!114 &519420034
 MonoBehaviour:
