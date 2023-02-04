@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4952419006496718456}
   - component: {fileID: 4952419006496718407}
   m_Layer: 0
-  m_Name: Player Level 2
+  m_Name: Player Level 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4952419006496718458}
   moveSpeed: 3
-  fallingSpeed: 65
+  fallingSpeed: 60
   jumpHigh: 25
   isJump: 0
 --- !u!95 &4952419006496718407
@@ -153,7 +153,7 @@ Animator:
   m_GameObject: {fileID: 4952419006496718406}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d64e0eb76dfc9a848bf324e5cde09d35, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5ea512aa52c745542990238fb8d18fdf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
