@@ -7,6 +7,9 @@ public class ClicktoGonext : MonoBehaviour
 {
     public void GotoNextScene()
     {
+        DollController.dollPick = false;
+        ChairController.chairPick = false;
+        PCController.pcOk = false;
         SceneManager.LoadScene(2);
     }
 }
