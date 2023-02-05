@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private float jumpHigh;
     public Animator animator;
 
+    private Vector3 playervec;
     private float tempSpeed;
 
     public bool isJump = false;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        playervec = this.transform.position;
         tempSpeed = -fallingSpeed;
     }
     // Start is called before the first frame update
@@ -36,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Inputs();
+        CheatCode();
     }
     private void FixedUpdate()
     {
@@ -93,5 +96,14 @@ public class PlayerMovement : MonoBehaviour
     public void Die()
     {
         FindObjectOfType<GameManager>().Gameover();
+    }
+
+    void CheatCode()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Vector3 cheatPos = new Vector3(playervec.x, -80.0f, playervec.z);
+            this.transform.position = cheatPos;
+        }
     }
 }
