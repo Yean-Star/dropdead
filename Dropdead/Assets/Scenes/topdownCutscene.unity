@@ -301,7 +301,7 @@ MonoBehaviour:
   - name: 1
     clip: {fileID: 8300000, guid: c0e0dcb72c9c77348a7f4606b76fe3fe, type: 3}
     mixer: {fileID: 0}
-    volume: 1
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -315,9 +315,16 @@ MonoBehaviour:
   - name: 3
     clip: {fileID: 8300000, guid: 744e404789747934fb6e64189d69136b, type: 3}
     mixer: {fileID: 0}
-    volume: 1
+    volume: 0.4
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: whoosh
+    clip: {fileID: 8300000, guid: 787119dc8cd4831428f1a80a53c731a0, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.35
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!1 &401909048
 GameObject:
