@@ -14,7 +14,7 @@ public class EndingDialogue : MonoBehaviour
     private void Start()
     {
         StartCoroutine(WaittoApp());
-        if(click >= 3)
+        if(click >= 6)
         {
             StartCoroutine(DeadAppear());
         }
@@ -23,7 +23,7 @@ public class EndingDialogue : MonoBehaviour
     private void Update()
     {
         ClicktoNext();
-        if (click > 3 )
+        if (click > 6)
         {
             StartCoroutine(DeadAppear());
         }
@@ -46,7 +46,7 @@ public class EndingDialogue : MonoBehaviour
        if (Input.GetMouseButtonDown(0))
        {
             FindObjectOfType<DialogeManager>().DisplayNextSentence();
-                
+            click++;
        }
         
         
