@@ -10,6 +10,6 @@ public class ClicktoGonext : MonoBehaviour
         DollController.dollPick = false;
         ChairController.chairPick = false;
         PCController.pcOk = false;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("SO")+2);
     }
 }

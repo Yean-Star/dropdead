@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mainmenu.unity
     guid: 6099279f49732cb4a8b5f7440aef97f6
   - enabled: 1
+    path: Assets/Scenes/topdownCutscene.unity
+    guid: 9b499d1158125ca418a77918090d6d06
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -17,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: ca3a4fb1eb12ce44cb0d045a66c13759
-  - enabled: 1
-    path: Assets/Scenes/topdownCutscene.unity
-    guid: 9b499d1158125ca418a77918090d6d06
   m_configObjects: {}
