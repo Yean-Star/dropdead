@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public void ChangeScene(int sceneID)
     {
         SceneManager.LoadScene(sceneID,LoadSceneMode.Single);
+        Time.timeScale = 1.0f;
     }
     public void ClicktoTop()
     {
