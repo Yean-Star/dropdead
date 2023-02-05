@@ -924,6 +924,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ab133b76c71eb46bf633cf35beb0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &281835598 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4952419006496718407, guid: 97fa2193347bec143aca2c64e72d6548, type: 3}
+  m_PrefabInstance: {fileID: 1302284967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &302675284
 GameObject:
   m_ObjectHideFlags: 0
@@ -5041,6 +5046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Level 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4952419006496718456, guid: 97fa2193347bec143aca2c64e72d6548, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 281835598}
     - target: {fileID: 4952419006496718460, guid: 97fa2193347bec143aca2c64e72d6548, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5085,6 +5094,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4952419006755078654, guid: 97fa2193347bec143aca2c64e72d6548, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 281835598}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97fa2193347bec143aca2c64e72d6548, type: 3}
 --- !u!1 &1391722713
