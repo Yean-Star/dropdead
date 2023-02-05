@@ -38,6 +38,7 @@ public class Interactable : MonoBehaviour
             {
                 interaction.Invoke();
                 pressKeyText.gameObject.SetActive(false);
+                AudioManager.instance.Play("whoosh");
             }
         }
     }
