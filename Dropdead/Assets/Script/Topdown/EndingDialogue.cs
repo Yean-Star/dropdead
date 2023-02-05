@@ -19,6 +19,7 @@ public class EndingDialogue : MonoBehaviour
         {
             StartCoroutine(DeadAppear());
         }
+        AudioManager.instance.Stop("3");
         
     }
     private void Update()
