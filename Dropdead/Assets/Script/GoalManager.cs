@@ -29,6 +29,10 @@ public class GoalManager : MonoBehaviour
         {
             button.gameObject.SetActive(true);
         }
+        else
+        {
+            button.gameObject.SetActive(false);
+        }
         
     }
 }
