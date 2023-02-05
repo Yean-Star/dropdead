@@ -140,8 +140,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4952419006496718458}
   moveSpeed: 3
-  fallingSpeed: 200
+  fallingSpeed: 175
   jumpHigh: 25
+  animator: {fileID: 0}
   isJump: 0
 --- !u!95 &4952419006496718407
 Animator:
@@ -234,4 +235,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7ed1d479906ce4a864312d8290ab96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   jumping: {fileID: 4952419006496718456}
