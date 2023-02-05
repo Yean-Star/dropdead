@@ -2120,7 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 281835595}
-  camSpeed: 3.9
+  camSpeed: 3.5
   _reframeSpeed: 0.61
 --- !u!114 &519420034
 MonoBehaviour:

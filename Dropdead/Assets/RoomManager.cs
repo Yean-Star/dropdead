@@ -19,6 +19,7 @@ public class RoomManager : MonoBehaviour
             Instantiate(room1.Chair, new Vector3(-1.4f, 1.2f, -9.90f), Quaternion.identity);
             Instantiate(room1.Doll, new Vector3(-0.1f, 0.6f, -9.90f), Quaternion.identity);
             Instantiate(room1.PC, new Vector3(-0.09f, 0.6f, -9.90f), Quaternion.identity);
+            AudioManager.instance.Play("1");
         }
         if (pint == 2)
         {
@@ -29,6 +30,7 @@ public class RoomManager : MonoBehaviour
             Instantiate(room2.Chair, new Vector3(-1.4f, 1.2f, -9.90f), Quaternion.identity);
             Instantiate(room2.Doll, new Vector3(-0.1f, 0.6f, -9.90f), Quaternion.identity);
             Instantiate(room2.PC, new Vector3(-0.09f, 0.6f, -9.90f), Quaternion.identity);
+            AudioManager.instance.Play("2");
         }
         if(pint == 3)
         {
@@ -39,6 +41,7 @@ public class RoomManager : MonoBehaviour
             Instantiate(room3.Chair, new Vector3(-1.4f, 1.2f, -9.90f), Quaternion.identity);
             Instantiate(room3.Doll, new Vector3(-0.1f, 0.6f, -9.90f), Quaternion.identity);
             Instantiate(room3.PC, new Vector3(-0.09f, 0.6f, -9.90f), Quaternion.identity);
+            AudioManager.instance.Play("3");
         }
     }
 
