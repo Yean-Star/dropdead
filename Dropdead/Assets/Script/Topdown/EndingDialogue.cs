@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class EndingDialogue : MonoBehaviour
@@ -38,6 +39,12 @@ public class EndingDialogue : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         text2.gameObject.SetActive(false);
         text.gameObject.SetActive(true);
+        StartCoroutine(Countdown());
+    }
+    IEnumerator Countdown()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(0);
     }
     void ClicktoNext()
     {
